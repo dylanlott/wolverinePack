@@ -1,27 +1,19 @@
 (function(){
-	'use strict';
 
-var app = angular.module('booklet');
-
-app.controller('SignupCtrl', function($scope, $http, $q, API){
-
-$scope.signup = function(user){
-
-	var dfd=$q.defer; 
-	$http({
-		method: 'POST', 
-		url: API + '/api/users',
-		data: {
-			"fullName": user.fullName, 
-			"email": user.email, 
-			"password": user.password
-		}
-	})
-	.then(function(res) {
-		dfd.resolve(res); 
-	}); 
-	console.log("User created: ", user); 
-	return dfd.promise; 
-
-	}
-}();
+angular.module("booklet")
+.controller('SignupCtrl', function($scope) {
+		$scope.userSignup = function() {
+			if (user.password !== user.password2) {
+				$scope.error = "Passwords don't match.";
+				return;
+			}
+			usersService.signup(user.email, user.password, user.name)
+            .then(function(new_user) {
+				$location.path('/home');
+				console.log("success!", new_user);
+			}).catch(function(err) {
+				$scope.error = err.message;
+			});
+		};
+});
+})(); 

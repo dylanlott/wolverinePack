@@ -1,8 +1,13 @@
 <h2>Sign Up</h2>
 
-<h3>Enter Password</h3>
-<input ng-model="email" type="email" placeholder="Enter email">
-&nbsp
-<h3>Enter Password</h3>
-<input ng-model="password" type="password" placeholder="Enter password">
+<form>
 
+    <h3>Enter Email</h3>
+        <input ng-model="user.email" class="form-type" placeholder="Enter Email" />
+    &nbsp
+    <h3>Enter Password</h3>
+        <input ng-model="user.password" type="password" placeholder="Enter Password" />
+        <input ng-model="user.password2" type="password" placeholder="Confirm Password" />
+        <button ng-click="signup(user)">Submit</button>
+
+</form>
