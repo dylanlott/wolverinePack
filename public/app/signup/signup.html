@@ -1,13 +1,16 @@
-<h2>Sign Up</h2>
+<h3>Enter Name</h3>
+	<input ng-model="user.name" class="form-type" placeholder="Enter Name" />
 
-<form>
+<h3>Enter Email</h3>
+	<input ng-model="user.email" class="form-type" placeholder="Enter Email" />
+	<!-- <input ng-model="user.email" type="email" placeholder="Enter email" /> -->
+&nbsp
+<h3>Enter Password</h3>
+	<input ng-model="user.password" type="password" placeholder="Enter Password" />
+	<input ng-model="user.password2" type="password" placeholder="Confirm Password" />
+	
+	<button ng-click="signup(user)">Submit</button> 
 
-    <h3>Enter Email</h3>
-        <input ng-model="user.email" class="form-type" placeholder="Enter Email" />
-    &nbsp
-    <h3>Enter Password</h3>
-        <input ng-model="user.password" type="password" placeholder="Enter Password" />
-        <input ng-model="user.password2" type="password" placeholder="Confirm Password" />
-        <button ng-click="signup(user)">Submit</button>
+	<br >
 
-</form>
+<a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google+</a>
