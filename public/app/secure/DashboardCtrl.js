@@ -3,7 +3,7 @@
 
 var app = angular.module('booklet');
 
-app.controller('BookmarksCtrl', function(){
+app.controller('BookmarksCtrl', function($scope){
 
 //get Bookmarks 
 $scope.bookmarks = bookmarks; 
