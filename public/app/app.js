@@ -2,7 +2,7 @@
   // 'use strict';
 
 angular
-  .module("jobapp", ['ui.router'])
+  .module("fashionfile", ['ui.router'])
 
 //config
 	.config(function($stateProvider, $urlRouterProvider) {
@@ -11,7 +11,7 @@ angular
 		$stateProvider
 		 	.state('home', {
 		 			url: '/',
-          templateUrl : './app/home/home.html',
+          templateUrl : './app/home/home.html', 
           controller  : 'HomeCtrl'
       })
       .state('signup', {
