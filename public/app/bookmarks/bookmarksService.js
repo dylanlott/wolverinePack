@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('booklet')
+  angular.module('fashionphile')
   .service('bookmarkService', function($q, $http) {
 
     this.getData = function() {

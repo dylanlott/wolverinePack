@@ -1,7 +1,7 @@
 (function(){
 	'use strict';
 
-var app = angular.module('booklet');
+var app = angular.module('fashionphile');
 
 //menu directive
 app

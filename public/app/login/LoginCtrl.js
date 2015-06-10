@@ -2,7 +2,7 @@
 	// 'use strict';
 
 
-angular.module('booklet').controller('LoginCtrl', function($scope, $location, UsersService) {
+angular.module('fashionphile').controller('LoginCtrl', function($scope, $location, UsersService) {
 
 	$scope.login = function(user){
 		var dfd = $q.defer;

@@ -1,4 +1,4 @@
-angular.module('booklet').service('SignupService', function($http, $q) {
+angular.module('fashionphile').service('SignupService', function($http, $q) {
 
 	this.signup = function(email, password, name) { 
 		var deferred = $q.defer();

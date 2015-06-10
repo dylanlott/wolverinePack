@@ -2,7 +2,7 @@
   // 'use strict';
 
 angular
-  .module("booklet", ['ui.router'])
+  .module("jobapp", ['ui.router'])
 
 //config
 	.config(function($stateProvider, $urlRouterProvider) {

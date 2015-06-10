@@ -1,6 +1,6 @@
 (function(){
 
-angular.module('booklet').controller('SignupCtrl', function($scope, UsersService) {
+angular.module('fashionphile').controller('SignupCtrl', function($scope, UsersService) {
 
 	$scope.signup = function(user) {
 		if (user.password !== user.password2) {
